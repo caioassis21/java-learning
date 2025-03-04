@@ -6,3 +6,4 @@ Este repositório contém meus projetos iniciais em Java enquanto aprendo a ling
 
 - **HelloWorld**: Meu primeiro programa em Java.
 - **Exercicios de estrutura sequencial.**
+- **Exercicios de estrutura sequencial.**
