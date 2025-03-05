@@ -28,7 +28,7 @@ public class Imc {
 
         double imc = peso / (Math.pow(altura, 2));
 
-        System.out.printf("O seu IMC é: %.2f%n", imc );
+        System.out.printf("O seu IMC é: %.2f%n", imc);
 
         if (imc < 18.5) {
             System.out.println("Classificação: Abaixo do peso.");
@@ -39,6 +39,7 @@ public class Imc {
         } else {
             System.out.println("Classificação: Obesidade.");
         }
+        
 
         sc.close();
 
