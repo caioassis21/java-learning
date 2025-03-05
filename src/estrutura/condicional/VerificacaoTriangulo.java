@@ -41,7 +41,7 @@ public class VerificacaoTriangulo {
         } else {
             System.out.println("Os lados não formam um triangulo");
         }
-        
+
         sc.close();
 
     }
