@@ -39,8 +39,7 @@ public class Imc {
         } else {
             System.out.println("Classificação: Obesidade.");
         }
-
-
+        
         sc.close();
 
     }
