@@ -18,15 +18,28 @@ public class Media_Idades {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite a sua idade: ");
-        int idade = sc.nextInt();
+        int idade;
+        int somaIdade = 0;
+        int contador = 0;
+
+        System.out.println("Digite as idades:");
+        idade = sc.nextInt();
 
         if (idade < 0) {
-            System.out.println("Impossivel Calcular");
+            System.out.println("Impossivel calcular");
+        } else {
+            while (idade >= 0) {
+                somaIdade = somaIdade + idade;
+                contador = contador +1;
+                idade = sc.nextInt();
+            }
+
+            double media = (double) somaIdade / contador;
+
+            System.out.printf("MEDIA = %.2f%n", media);
+
+            sc.close();
         }
 
-        else {
-
-        }
     }
 }
