@@ -1,33 +1,39 @@
 package estrutura.repeticao;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class CalculoEmLaco {
     public static void main(String[] args) {
 
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int cont = 1;
-        int numero;
         int soma = 0;
-        int contFinal;
+        int totalNumerosInformados;
+        int contador = 1;
+        int numero;
+
 
         System.out.print("Quantas numeros voce vai informar? ");
-        contFinal = sc.nextInt();
+        totalNumerosInformados = sc.nextInt();
 
-        while (cont <= contFinal) {
-            System.out.println("Digite um numero: ");
-             numero = sc.nextInt();
-             soma = soma + numero;
+        while (contador <= totalNumerosInformados) {
+            System.out.print("Digite um numero: ");
+            numero = sc.nextInt();
 
-             cont = cont +1;
+            soma = soma + numero;
+            contador = contador + 1;
+
         }
 
-        double media = (double) soma / cont;
+        System.out.println("A soma foi: " + soma);
 
-        System.out.println("A soma dos numeros é: " + soma);
-        System.out.printf("A media dos numeros é: %.2f%n", media);
+        double media = (double) soma / totalNumerosInformados;
+
+        System.out.printf("Media: %.2f%n", media);
 
         sc.close();
     }
 }
+
